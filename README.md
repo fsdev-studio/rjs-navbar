@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# About
+rjs-navbar is a navigational header component for react web apps.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Install with npm:
+``` npm i rjs-navbar```
+Install with yarn
+```yarn add rjs-navbar```
 
-### `yarn start`
+## Include in your project
+```javascript
+import Footer from 'rjs-navbar/Navbar';
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```javascript
+<Navbar
+ logo={<img src="http://mrmrs.github.io/photos/u/011.jpg" style={{width:'100%',height:'100%'}}/>}
+ activeLabel={(val) => setGoto(val)}
+ searchQuery={(val) => setGoto(val)}
+ left={"search"}
+ center={["item 1", "item2","item 1", "item2"]}
+ right={"logo"}
+ search={true}
+ foreGroundStyle={{color:'white',padding:3,border:'1px solid white',width:'100%', margin:2,fontSize:17, fontWeight:'bold'}}
+ backGroundStyle={{background:'linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0))',opacity:0.9}}
+ searchStyle={{border:'1px solid green', width:200, height:30}}
+/>
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Props
+Props | Details  |  Examples
+-------------------- | -------------------------
+logo| can be a string or a react component |  logo={<img src="http://mrmrs.github.io/photos/u/011.jpg" style={{width:'100%',height:'100%'}}/>}
+activeLabel | can be set to true or false | {(val) => setGoto(val)}
+searchQuery | sjsjs | {(val) => setGoto(val)}
+left | jsjsj | left={"search"}
+center | |  center={["item 1", "item2","item 1", "item2"]}
+right |   |right={"logo"}
+search |  | search={true}
+foreGround |  | foreGroundStyle={{color:'white',padding:3,border:'1px solid white',width:'100%', margin:2,fontSize:17, fontWeight:'bold'}}
+backGroundStyle | | backGroundStyle={{background:'linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0))',opacity:0.9}}
+searchStyle | |  searchStyle={{border:'1px solid green', width:200, height:30}}
 
-### `yarn test`
+https://frontend.fsdev.studio- Examples
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Demo](https://frontend.fsdev.studio)
