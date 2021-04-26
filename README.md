@@ -11,7 +11,7 @@ Install with yarn
 
 ## Include in your project
 ```javascript
-import Footer from 'rjs-navbar/Navbar';
+import Navbar from 'rjs-navbar/Navbar';
 ```
 
 ```javascript
