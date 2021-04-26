@@ -1,22 +1,28 @@
 {
   "name": "rjs-navbar",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "babel src/components -d ./ --copy-files"
+    },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/fsdev-studio/rjs-navbar"
   },
+    "babel": {
+      "presets": [
+        "@babel/preset-react"
+      ]
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -34,5 +40,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/preset-react": "^7.13.13"
+  },
+  "keywords": [
+  "footer",
+  "reactjs",
+  "sticky footer"
+],
+"author": "@fsdevCOZA",
+"license": "MIT"
 }

@@ -41,8 +41,7 @@ right | right side component of navbar can be on of : "search","logo" or and arr
 search | sets the search input, can be true or false | search={true}
 foreGround | object containg styles for the foreground | {color:'white',padding:3,border:'1px solid white',width:'100%', margin:2,fontSize:17, fontWeight:'bold'}
 backGroundStyle | object containing styles for the background | {background:'linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0))',opacity:0.9}
-searchStyle | object containing styles for the search input box |  {border:'1px solid green', width:200, height:30}}
+searchStyle | object containing styles for the search input box |  {border:'1px solid green', width:200, height:30}
 
-https://frontend.fsdev.studio- Examples
 
-[Demo](https://frontend.fsdev.studio)
+[Examples](https://fsdev.studio)
