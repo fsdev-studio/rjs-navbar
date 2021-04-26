@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-
-import Navigation, {navigate,navigation} from './Navigation'
 import './Navbar.css';
 
 function Navbar({
@@ -23,13 +21,11 @@ function Navbar({
 
   const [goto, setGoto] = useState(r);
   const [navHeight,setNavHeight] = useState(70)
-  let compo =  goto.filter((g,i)=>{
-        return navigation() === g.url
-      });
+
 const navH = navHeight == 'auto' ? 70 : 'auto'
   return (
     <div className="container" style={{height:navHeight, background:backGroundStyle.background,opacity:backGroundStyle.opacity}}>
-  <span className="openbtn" style={{color:foreGroundStyle.color}} onClick={() => setNavHeight(navH)}>&#9776;</span>
+  <span className="openNav" style={{color:foreGroundStyle.color}} onClick={() => setNavHeight(navH)}>&#9776;</span>
 
 
     <div className="labels">
